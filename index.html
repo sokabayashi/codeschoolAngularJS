@@ -9,11 +9,11 @@
 </head>
 
 <body ng-controller="StoreController as store">
-<ul class="list group">
+<ul class="list-group">
     <li class="list-group-item" ng-repeat="product in store.products">
-        <h3> {{product.name}}</h3>
-
+        <h3> {{product.name}}
         <em class="pull-right">${{product.price}}</em>
+        </h3>
  </li>
 </ul>
 <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
