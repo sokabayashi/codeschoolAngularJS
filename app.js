@@ -15,5 +15,7 @@
     name: 'Dodecahedron',
     price: 2.95,
     description: 'yada yada yada',
+    canPurchase: true,
+    soldOut: false
   }
 })();
