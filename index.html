@@ -2,25 +2,21 @@
 <html ng-app="store">
 
 <head lang="en">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!--<meta charset="UTF-8">-->
     <title>Gem Store</title>
 </head>
 
-<body>
-<div ng-controller="StoreController as store">
-    <div ng-repeat="product in store.products">
-        <h1> {{product.name}}</h1>
+<body ng-controller="StoreController as store">
+<ul class="list group">
+    <li class="list-group-item" ng-repeat="product in store.products">
+        <h3> {{product.name}}</h3>
 
-        <h2> {{product.price}} </h2>
-
-        <p> {{product.description}} </p>
-
-        <button ng-show="product.canPurchase"> Add to Cart</button>
-    </div>
-</div>
-
+        <em class="pull-right">${{product.price}}</em>
+ </li>
+</ul>
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 </body>
