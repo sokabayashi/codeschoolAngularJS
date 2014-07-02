@@ -4,13 +4,13 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <meta charset="UTF-8">
-    <title>Hey</title>
+    <title>Gem Store</title>
 </head>
 <body>
-<div>
-    <h1> Product Name </h1>
-    <h2> $Product Price </h2>
-    <p> Product Description </p>
+<div ng-controller="StoreController as store">
+    <h1> {{store.product.name}}</h1>
+    <h2> {{store.product.price}} </h2>
+    <p>  {{store.product.description}} </p>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
